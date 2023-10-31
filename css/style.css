@@ -78,10 +78,11 @@ header img {
 /* link colors */
 a {
       color: #000000;
+      text-decoration: none;
     }
 
 a:hover {
-      color: #DA5437;
+      color: #dacf37;
     }
 
 /* HEADER */

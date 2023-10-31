@@ -49,21 +49,21 @@ if (pg == 0) {pg = maxpg;} //display MOST RECENT COMIC when the webpage is loade
 const pgData = [
     {
         pgNum: 1, //what page number it is
-        title: "The First Page Title", //the title of the page (leaving this blank will default it to "Page X")
+        title: "The First Day", //the title of the page (leaving this blank will default it to "Page X")
         date: writeDate(2023, 10, 31), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         altText: "Here's some alt text!", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
         imageFiles: 3, //how many image files this page is split into
         authorNotes: `
-            <p>If you want to write an author notes section, this'd be the place to do it.</p>
-            <p>You can even use whatever html tags you want in here to format it, the script called on your html page should spit out anything you type between these backticks.</p>
+            <p>Welcome to the very first page of Inappropriate!</p>
+            <p>This comic will have a print edition of it, and in fact it may vary from the online one. However the content will remain relatively the same, while pacing may vary slightly. I hope you enjoy regardless hwoever, and thank you so much for even starting reading!</p>
             `,
     },
     {
         pgNum: 2,
-        title: "The Second Page Title",
-        date: writeDate(2021, 3, 17),
+        title: "",
+        date: writeDate(2023, 10, 31),
         altText: "Here's some more alt text!",
-        imageFiles: 2,
+        imageFiles: 4,
         authorNotes: `
             <p>You can have different author notes for every page.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate, orci sit amet dignissim eleifend, magna felis malesuada nunc, ut sagittis purus mi ac urna. Fusce ligula urna, varius vel sapien sit amet, vulputate tempor felis. In hac habitasse platea dictumst. Aliquam laoreet volutpat interdum. Vestibulum non libero sit amet leo accumsan porttitor. Vivamus nec porttitor neque. Sed eget mauris quam.</p>
@@ -71,8 +71,8 @@ const pgData = [
     },
     {
         pgNum: 3,
-        title: "The Third Page Title",
-        date: writeDate(2021, 3, 18),
+        title: "",
+        date: writeDate(2023, 10, 31),
         altText: "Here's even more alt text!",
         imageFiles: 1,
         authorNotes: `
@@ -82,7 +82,7 @@ const pgData = [
     {
         pgNum: 4,
         title: "Even If The Title of a Page Is Really Long, It'll Wrap",
-        date: writeDate(2021, 3, 19),
+        date: writeDate(2023, 10, 31),
         altText: "So much alt text...",
         imageFiles: 1,
         authorNotes: `

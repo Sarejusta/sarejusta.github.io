@@ -47,12 +47,14 @@ function writePageTitle(div,toggleNum, char) {
     }
 */
   }
+
 }
 
 function writeAuthorNotes(div) { //display author notes
   if (pgData.length >= pg) {
     return document.querySelector(div).innerHTML = `${pgData[pg-1].authorNotes}`
   }
+
 }
 
 //function used to split pages into multiple images if needed, and add alt text

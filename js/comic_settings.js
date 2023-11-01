@@ -18,7 +18,7 @@ const maxpg = 2; //the current number of pages your comic has in total. this DOE
 const folder = "img/comics"; //directory of the folder where you keep all the comics
 const image = "pg"; //what you'll name all your comic pages
 const imgPart = "_" //special character(s) you put after the page number to subdivide pages into multiple image files (ie pg2_1, pg2_2, etc)
-const ext = "jpg"; //file extension of your comic pages
+const ext = "png"; //file extension of your comic pages
 
 //THUMBNAIL SETTINGS
 const thumbFolder = "img/thumbs" //directory of the folder where you keep all the thumbnail images for the comics, in case you want the archive page to use thumbnails.
@@ -52,7 +52,7 @@ const pgData = [
         title: "The First Day", //the title of the page (leaving this blank will default it to "Page X")
         date: writeDate(2023, 10, 31), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         altText: "Here's some alt text!", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
-        imageFiles: 3, //how many image files this page is split into
+        imageFiles: 6, //how many image files this page is split into
         authorNotes: `
             <p>Welcome to the very first page of Inappropriate!</p>
             <p>This comic will have a print edition of it, and in fact it may vary from the online one. However the content will remain relatively the same, while pacing may vary slightly. I hope you enjoy regardless hwoever, and thank you so much for even starting reading!</p>
@@ -63,7 +63,7 @@ const pgData = [
         title: ``,
         date: writeDate(2023, 10, 31),
         altText: "Here's some more alt text!",
-        imageFiles: 4,
+        imageFiles: 6,
         authorNotes: `
             <p>You can have different author notes for every page.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate, orci sit amet dignissim eleifend, magna felis malesuada nunc, ut sagittis purus mi ac urna. Fusce ligula urna, varius vel sapien sit amet, vulputate tempor felis. In hac habitasse platea dictumst. Aliquam laoreet volutpat interdum. Vestibulum non libero sit amet leo accumsan porttitor. Vivamus nec porttitor neque. Sed eget mauris quam.</p>

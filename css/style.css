@@ -111,6 +111,11 @@ header #nav {
   padding-bottom: 25px;
 }
 
+/* comic header title Color */
+.writePageTitle {
+  color: #ffffff;
+}
+
 /* style comic page image */
 .comicPage img {
   width: 900px;

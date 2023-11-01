@@ -16,6 +16,8 @@ body {
 header img {
   width: 500px;
   max-width: 98%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* clearfix hack to prevent image overflow. check out the W3Schools page on it. */

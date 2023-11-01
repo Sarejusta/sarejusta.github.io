@@ -60,7 +60,7 @@ const pgData = [
     },
     {
         pgNum: 2,
-        title: ``,
+        title: "",
         date: writeDate(2023, 10, 31),
         altText: "Here's some more alt text!",
         imageFiles: 6,

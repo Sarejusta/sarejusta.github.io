@@ -5,9 +5,9 @@ document.querySelector(".writeHeader").innerHTML = `
         <a href="index.html"><img src="./img/logo.png" alt="" /></a> 
 
         <div id="nav">
-            <a href="index.html">Home</a> |
-            <a href="archive.html">Archive</a> |
-            <a href="about.html">About</a> |
+            <a href="index.html">Home</a>  ◦ 
+            <a href="archive.html">Archive</a>  ◦ 
+            <a href="about.html">About</a>  ◦ 
             <a href="characters.html">Characters</a>
         </div>
     </header>

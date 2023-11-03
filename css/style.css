@@ -80,12 +80,12 @@ header img {
 
 /* link colors */
 a {
-      color: #ffffff;
+      color: #ec7dc9;
       text-decoration: none;
     }
 
 a:hover {
-      color: #dacf37;
+      color: rgb(192, 70, 153);
     }
 
 /* HEADER */

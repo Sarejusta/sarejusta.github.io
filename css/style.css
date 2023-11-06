@@ -74,8 +74,17 @@ header img {
 }
 
 /* specific to Characters */
-.charTable, .charTable td { 
+.charTable { 
+  text-align: left;
   width: 100%;
+}
+
+.charText {
+  text-align: center justify;
+  padding: 0 25px;
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 50px;
 }
 
 /* link colors */

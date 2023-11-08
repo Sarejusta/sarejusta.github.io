@@ -56,7 +56,9 @@ header img {
 }
 
 .subPage:not(.archivePage) {
-  text-align: center;
+  text-align: left;
+  margin: auto;
+  padding: 0px 40px 40px;
 }
 
 /* for pictures displayed to the left */

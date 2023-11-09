@@ -113,82 +113,83 @@ function imgOrText(setImg,navTextSet) { //function that writes the indicated nav
 }
 
 function writeNav(imageToggle) {
-    let writeNavDiv = document.querySelectorAll(".writeNav");
-    writeNavDiv.forEach(function(element) {
+  let writeNavDiv = document.querySelectorAll(".writeNav");
+  writeNavDiv.forEach(function (element) {
       element.innerHTML = `<div class="comicNav">
-        ${firstButton()}
-        ${divider()}
-        ${prevButton()}
-        ${divider()}
-        ${nextButton()}
-        ${divider()}
-        ${lastButton()}
-        </div>
-        `;})
+      ${firstButton()}
+      ${divider()}
+      ${prevButton()}
+      ${divider()}
+      ${nextButton()}
+      ${divider()}
+      ${lastButton()}
+      </div>
+      `;
+  })
 
-    function firstButton() {
-        //FIRST BUTTON
-        if (pg > 1) {
-            //wait until page 2 to make button active
-            return `<a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
-        } else {
-            if (!imageToggle) {
-                return imgOrText(imageToggle, 0);
-            } else {
-                return ``;
-            }
-        }
-    }
+  function firstButton() {
+      //FIRST BUTTON
+      if (pg > 1) {
+          //wait until page 2 to make button active
+          return `<a href="?pg=` + 1 + navScrollTo + `" class="navButton navButton-first">` + imgOrText(imageToggle, 0) + `</a>`;
+      } else {
+          if (!imageToggle) {
+              return imgOrText(imageToggle, 0);
+          } else {
+              return ``;
+          }
+      }
+  }
 
-    function divider() {
-        //divider
-        if (!imageToggle) {
-            return ` | `;
-        }
-        return ``;
-    }
+  function divider() {
+      //divider
+      if (!imageToggle) {
+          return ` | `;
+      }
+      return ``;
+  }
 
-    function prevButton() {
-        //PREV BUTTON
-        if (pg > 1) {
-            //wait until page 2 to make button active
-            return `<a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
-        } else {
-            if (!imageToggle) {
-                return imgOrText(imageToggle, 1);
-            } else {
-                return ``;
-            }
-        }
-    }
+  function prevButton() {
+      //PREV BUTTON
+      if (pg > 1) {
+          //wait until page 2 to make button active
+          return `<a href="?pg=` + (pg - 1) + navScrollTo + `" class="navButton navButton-prev">` + imgOrText(imageToggle, 1) + `</a>`;
+      } else {
+          if (!imageToggle) {
+              return imgOrText(imageToggle, 1);
+          } else {
+              return ``;
+          }
+      }
+  }
 
-    function nextButton() {
-        //NEXT BUTTON
-        if (pg < maxpg) {
-            //only make active if not on the last page
-            return `<a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
-        } else {
-            if (!imageToggle) {
-                return imgOrText(imageToggle, 2);
-            } else {
-                return ``;
-            }
-        }
-    }
+  function nextButton() {
+      //NEXT BUTTON
+      if (pg < maxpg) {
+          //only make active if not on the last page
+          return `<a href="?pg=` + (pg + 1) + navScrollTo + `" class="navButton navButton-next">` + imgOrText(imageToggle, 2) + `</a>`;
+      } else {
+          if (!imageToggle) {
+              return imgOrText(imageToggle, 2);
+          } else {
+              return ``;
+          }
+      }
+  }
 
-    function lastButton() {
-        //LAST BUTTON
-        if (pg < maxpg) {
-            //only make active if not on last page
-            return `<a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
-        } else {
-            if (!imageToggle) {
-                return imgOrText(imageToggle, 3);
-            } else {
-                return ``;
-            }
-        }
-    }
+  function lastButton() {
+      //LAST BUTTON
+      if (pg < maxpg) {
+          //only make active if not on last page
+          return `<a href="?pg=` + maxpg + navScrollTo + `" class="navButton navButton-last">` + imgOrText(imageToggle, 3) + `</a>`;
+      } else {
+          if (!imageToggle) {
+              return imgOrText(imageToggle, 3);
+          } else {
+              return ``;
+          }
+      }
+  }
 }
 
 //KEYBOARD NAVIGATION

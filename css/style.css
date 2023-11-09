@@ -117,6 +117,37 @@ header #nav {
   justify-content: center;
   padding: 10px 0px;
 }
+.navButton {
+  /* Common styles for all buttons */
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Adding a smooth transition effect */
+}
+
+.navButton:hover {
+  /* Common styles for all buttons on hover */
+  transform: scale(1.2); /* 20% expansion on hover */
+}
+
+.navButton-first:hover {
+  /* Hover styles for the first button */
+  /* Add specific styles if needed */
+}
+
+.navButton-prev:hover {
+  /* Hover styles for the first button */
+  /* Add specific styles if needed */
+}
+
+.navButton-next:hover {
+  /* Hover styles for the first button */
+  /* Add specific styles if needed */
+}
+
+.navButton-last:hover {
+  /* Hover styles for the first button */
+  /* Add specific styles if needed */
+}
 .comicNav img {
   width: 80px;
   max-width: 98%;

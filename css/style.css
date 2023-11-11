@@ -130,23 +130,19 @@ header #nav {
 }
 
 .navButton-first:hover {
-  /* Hover styles for the first button */
-  /* Add specific styles if needed */
+  text-decoration: none;
 }
 
 .navButton-prev:hover {
-  /* Hover styles for the first button */
-  /* Add specific styles if needed */
+  text-decoration: none;
 }
 
 .navButton-next:hover {
-  /* Hover styles for the first button */
-  /* Add specific styles if needed */
+  text-decoration: none;
 }
 
 .navButton-last:hover {
-  /* Hover styles for the first button */
-  /* Add specific styles if needed */
+  text-decoration: none;
 }
 .comicNav img {
   width: 80px;
@@ -183,9 +179,6 @@ header #nav {
   max-width: 900px;
   margin: auto;
 }
-
-/* Disqus Avatar */
-
 
 /* ARCHIVE PAGE */
 

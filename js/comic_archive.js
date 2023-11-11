@@ -5,24 +5,13 @@
 //then, to place that section of the archive on the html page, you'd make a div, and give that div a class name of whatever you've called that section of the archive in the first parameter.
 //if you put anything in that div, the list of comics will get appended after it. i.e. you can put the title of that specific section as a header in that div. 
 
-writeArchive(
-    "chrono", //class of the div that you want this section of the archive to appear in. to have it be on your html page, make an empty div with this class.
-    1, //earliest page to list
-    maxpg, //latest page to list. setting to maxpg will make it automatically update with the latest page
-    -1, //if set to 0, list is displayed "latest first". if set to -1, list is displayed chronologically
-    true, //if set to true, each comic will have its own thumbnail image next to it. if a comic doesn't have its own thumbnail, it'll be set to the default thumbnail.
-    true //if set to true, each comic will have a display number
-);
+writeArchive("chapter1", 1, 4, -1, true,true) //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
 
-writeArchive("lastfirst", 1, maxpg, 0, true,true);
+writeArchive("chapter2", 5, 9, -1, true,true);
 
-writeArchive("chapter1",1,3,-1,false,true) //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
+writeArchive("chapter3", 10, 12, -1, true,true);
 
-writeArchive("chapter2", 4, 9, -1, false,false);
-
-writeArchive("chapter3", 9, 12, -1, false,false);
-
-writeArchive("chapter4", 13, 15, -1, false,false);
+writeArchive("chapter4", 13, 15, -1, true,true);
 
 //below this point is stuff you don't really need to pay attention to if you're not super familiar with JS 
 

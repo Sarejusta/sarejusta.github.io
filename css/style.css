@@ -20,6 +20,13 @@ header img {
   padding-bottom: 50px;
 }
 
+hr {
+  color: #392645; /* Set the color of the line */
+  background-color: #333; /* Set the background color (for browser compatibility) */
+  height: 2px; /* Set the height or thickness of the line */
+  border: none; /* Remove the default border */
+}
+
 /* clearfix hack to prevent image overflow. check out the W3Schools page on it. */
 .clearfix::after {
   content: "";
@@ -29,10 +36,19 @@ header img {
 
 /*FONTS*/
 
-/* header font */
+/* header fonts */
+
+/* global headers */
 #showComic, header, h1, h2, h3, h4, h5 {
   font-family: 'Rock Salt', cursive;
   text-decoration: none;
+}
+
+/* special h2 archive headers */
+.h2Archive{
+  font-family: 'Rock Salt', cursive;
+  text-decoration: none;
+  margin-bottom: -24px !important;
 }
 
 /* body font */

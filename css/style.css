@@ -44,11 +44,16 @@ hr {
   text-decoration: none;
 }
 
+.strikethroughText {
+  text-decoration: line-through;
+  margin-bottom: -25px !important;
+}
+
 /* special h2 archive headers */
-.h2Archive{
+.h2Leading{
   font-family: 'Rock Salt', cursive;
   text-decoration: none;
-  margin-bottom: -24px !important;
+  margin-bottom: -20px !important;
 }
 
 /* body font */

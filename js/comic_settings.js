@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 4; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
+const maxpg = 10; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -52,7 +52,7 @@ const pgData = [
         title: "", //the title of the page (leaving this blank will default it to "Page X")
         date: writeDate(2023, 10, 31), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         altText: "", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
-        imageFiles: 6, //how many image files this page is split into
+        imageFiles: 1, //how many image files this page is split into
         authorNotes: `
             <p>Welcome to the very first page of Inappropriate!</p>
             <p>This comic will have a print edition of it, and in fact it may vary from the online one. However the content will remain relatively the same, while pacing may vary slightly. I hope you enjoy regardless hwoever, and thank you so much for even starting reading!</p>
@@ -63,7 +63,7 @@ const pgData = [
         title: "",
         date: writeDate(2023, 10, 31),
         altText: "",
-        imageFiles: 6,
+        imageFiles: 1,
         authorNotes: `
             <p>You can have different author notes for every page.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate, orci sit amet dignissim eleifend, magna felis malesuada nunc, ut sagittis purus mi ac urna. Fusce ligula urna, varius vel sapien sit amet, vulputate tempor felis. In hac habitasse platea dictumst. Aliquam laoreet volutpat interdum. Vestibulum non libero sit amet leo accumsan porttitor. Vivamus nec porttitor neque. Sed eget mauris quam.</p>
@@ -74,7 +74,7 @@ const pgData = [
         title: "",
         date: writeDate(2023, 10, 31),
         altText: "",
-        imageFiles: 6,
+        imageFiles: 1,
         authorNotes: `
             <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
             `,
@@ -84,7 +84,67 @@ const pgData = [
         title: "",
         date: writeDate(2023, 10, 31),
         altText: "",
-        imageFiles: 5,
+        imageFiles: 1,
+        authorNotes: `
+            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            `,
+    },
+    {
+        pgNum: 5,
+        title: "",
+        date: writeDate(2023, 10, 31),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            `,
+    },
+    {
+        pgNum: 6,
+        title: "",
+        date: writeDate(2023, 10, 31),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            `,
+    },
+    {
+        pgNum: 7,
+        title: "",
+        date: writeDate(2023, 10, 31),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            `,
+    },
+    {
+        pgNum: 8,
+        title: "",
+        date: writeDate(2023, 10, 31),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            `,
+    },
+    {
+        pgNum: 9,
+        title: "",
+        date: writeDate(2023, 10, 31),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            `,
+    },
+    {
+        pgNum: 10,
+        title: "",
+        date: writeDate(2023, 10, 31),
+        altText: "",
+        imageFiles: 1,
         authorNotes: `
             <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
             `,

@@ -5,13 +5,13 @@
 //then, to place that section of the archive on the html page, you'd make a div, and give that div a class name of whatever you've called that section of the archive in the first parameter.
 //if you put anything in that div, the list of comics will get appended after it. i.e. you can put the title of that specific section as a header in that div. 
 
-writeArchive("chapter1", 1, 4, -1, true,false); //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
+writeArchive("chapter1", 1, 10, -1, true,false); //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
 
-writeArchive("chapter2", 5, 9, -1, true,true);
+writeArchive("chapter2", 11, 20, -1, true,true);
 
-writeArchive("chapter3", 10, 12, -1, true,true);
+writeArchive("chapter3", 21, 30, -1, true,true);
 
-writeArchive("chapter4", 13, 15, -1, true,true);
+writeArchive("chapter4", 31, 40, -1, true,true);
 
 //below this point is stuff you don't really need to pay attention to if you're not super familiar with JS 
 
